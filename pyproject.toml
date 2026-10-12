@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "memscore"
+version = "0.1.0"
+description = "Portable cross-agent utility memory with trust-but-verify transfer"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Habib Ur Rehman" }]
+keywords = ["agents", "memory", "rag", "multi-agent"]
+dependencies = ["numpy>=1.24"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/habib-analyst/memscore"
+
+[tool.setuptools.packages.find]
+where = ["src"]

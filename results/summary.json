@@ -1,0 +1,494 @@
+{
+ "B": {
+  "scratch": {
+   "mean": 0.6506666666666667,
+   "min": 0.6066666666666667,
+   "max": 0.7066666666666667,
+   "per_seed": [
+    0.62,
+    0.6066666666666667,
+    0.68,
+    0.7066666666666667,
+    0.64
+   ]
+  },
+  "naive": {
+   "mean": 0.8306666666666667,
+   "min": 0.78,
+   "max": 0.8866666666666667,
+   "per_seed": [
+    0.78,
+    0.8,
+    0.86,
+    0.8866666666666667,
+    0.8266666666666667
+   ]
+  },
+  "recalib": {
+   "mean": 0.7946666666666667,
+   "min": 0.7133333333333334,
+   "max": 0.86,
+   "per_seed": [
+    0.76,
+    0.7133333333333334,
+    0.86,
+    0.86,
+    0.78
+   ]
+  }
+ },
+ "C": {
+  "scratch": {
+   "mean": 0.5293333333333334,
+   "min": 0.47333333333333333,
+   "max": 0.56,
+   "per_seed": [
+    0.47333333333333333,
+    0.54,
+    0.56,
+    0.5333333333333333,
+    0.54
+   ]
+  },
+  "naive": {
+   "mean": 0.7426666666666667,
+   "min": 0.6866666666666666,
+   "max": 0.7666666666666667,
+   "per_seed": [
+    0.6866666666666666,
+    0.76,
+    0.7466666666666667,
+    0.7666666666666667,
+    0.7533333333333333
+   ]
+  },
+  "recalib": {
+   "mean": 0.6533333333333333,
+   "min": 0.5666666666666667,
+   "max": 0.7,
+   "per_seed": [
+    0.5666666666666667,
+    0.7,
+    0.6533333333333333,
+    0.66,
+    0.6866666666666666
+   ]
+  }
+ },
+ "recalibration": {
+  "precision_mean": 1.0,
+  "recall_mean": 1.0,
+  "kept_mean": 159.4,
+  "dropped_mean": 0.0
+ },
+ "B_poisoned": {
+  "naive": {
+   "mean": 0.7253333333333333,
+   "min": 0.7,
+   "max": 0.7733333333333333,
+   "per_seed": [
+    0.74,
+    0.7066666666666667,
+    0.7733333333333333,
+    0.7,
+    0.7066666666666667
+   ]
+  },
+  "recalib": {
+   "mean": 0.788,
+   "min": 0.74,
+   "max": 0.84,
+   "per_seed": [
+    0.8,
+    0.7933333333333333,
+    0.84,
+    0.7666666666666667,
+    0.74
+   ]
+  }
+ },
+ "poison_recall_mean": 0.9,
+ "kill_gate": {
+  "passed": true,
+  "benign": {
+   "scratch": 0.6506666666666667,
+   "naive": 0.8306666666666667,
+   "recalib": 0.7946666666666667
+  },
+  "poisoned": {
+   "naive": 0.7253333333333333,
+   "recalib": 0.788
+  },
+  "poison_recall_mean": 0.9
+ },
+ "seeds": [
+  7,
+  17,
+  29,
+  43,
+  71
+ ],
+ "config": {
+  "donor_tasks": 400,
+  "n_tasks": 150,
+  "n_probes": 120
+ },
+ "elapsed_s": 10.0,
+ "runs": [
+  {
+   "seed": 7,
+   "donor_acc": 0.6125,
+   "donor_store": 155,
+   "B": {
+    "scratch": {
+     "overall": 0.62,
+     "first50": 0.4,
+     "last50": 0.82,
+     "store_size": 57
+    },
+    "naive": {
+     "overall": 0.78,
+     "first50": 0.74,
+     "last50": 0.86,
+     "store_size": 188
+    },
+    "recalib": {
+     "overall": 0.76,
+     "first50": 0.68,
+     "last50": 0.88,
+     "store_size": 191,
+     "recal": {
+      "kept": 155,
+      "dropped": 0,
+      "precision": 1.0,
+      "recall": 1.0
+     }
+    }
+   },
+   "B_poisoned": {
+    "naive": {
+     "overall": 0.74,
+     "first50": 0.56,
+     "last50": 0.84,
+     "store_size": 194
+    },
+    "recalib": {
+     "overall": 0.8,
+     "first50": 0.64,
+     "last50": 0.88,
+     "store_size": 182
+    },
+    "recal_detail": {
+     "n_poisoned": 4,
+     "poison_dropped": 3,
+     "poison_kept": 1,
+     "poison_recall": 0.75
+    }
+   },
+   "C": {
+    "scratch": {
+     "overall": 0.47333333333333333,
+     "first50": 0.26,
+     "last50": 0.62,
+     "store_size": 79
+    },
+    "naive": {
+     "overall": 0.6866666666666666,
+     "first50": 0.64,
+     "last50": 0.7,
+     "store_size": 202
+    },
+    "recalib": {
+     "overall": 0.5666666666666667,
+     "first50": 0.46,
+     "last50": 0.66,
+     "store_size": 219
+    }
+   }
+  },
+  {
+   "seed": 17,
+   "donor_acc": 0.5975,
+   "donor_store": 161,
+   "B": {
+    "scratch": {
+     "overall": 0.6066666666666667,
+     "first50": 0.46,
+     "last50": 0.7,
+     "store_size": 59
+    },
+    "naive": {
+     "overall": 0.8,
+     "first50": 0.82,
+     "last50": 0.78,
+     "store_size": 191
+    },
+    "recalib": {
+     "overall": 0.7133333333333334,
+     "first50": 0.64,
+     "last50": 0.74,
+     "store_size": 204,
+     "recal": {
+      "kept": 161,
+      "dropped": 0,
+      "precision": 1.0,
+      "recall": 1.0
+     }
+    }
+   },
+   "B_poisoned": {
+    "naive": {
+     "overall": 0.7066666666666667,
+     "first50": 0.68,
+     "last50": 0.72,
+     "store_size": 205
+    },
+    "recalib": {
+     "overall": 0.7933333333333333,
+     "first50": 0.78,
+     "last50": 0.76,
+     "store_size": 188
+    },
+    "recal_detail": {
+     "n_poisoned": 4,
+     "poison_dropped": 4,
+     "poison_kept": 0,
+     "poison_recall": 1.0
+    }
+   },
+   "C": {
+    "scratch": {
+     "overall": 0.54,
+     "first50": 0.36,
+     "last50": 0.72,
+     "store_size": 69
+    },
+    "naive": {
+     "overall": 0.76,
+     "first50": 0.8,
+     "last50": 0.74,
+     "store_size": 197
+    },
+    "recalib": {
+     "overall": 0.7,
+     "first50": 0.68,
+     "last50": 0.76,
+     "store_size": 206
+    }
+   }
+  },
+  {
+   "seed": 29,
+   "donor_acc": 0.6075,
+   "donor_store": 157,
+   "B": {
+    "scratch": {
+     "overall": 0.68,
+     "first50": 0.48,
+     "last50": 0.78,
+     "store_size": 48
+    },
+    "naive": {
+     "overall": 0.86,
+     "first50": 0.84,
+     "last50": 0.86,
+     "store_size": 178
+    },
+    "recalib": {
+     "overall": 0.86,
+     "first50": 0.82,
+     "last50": 0.86,
+     "store_size": 178,
+     "recal": {
+      "kept": 157,
+      "dropped": 0,
+      "precision": 1.0,
+      "recall": 1.0
+     }
+    }
+   },
+   "B_poisoned": {
+    "naive": {
+     "overall": 0.7733333333333333,
+     "first50": 0.68,
+     "last50": 0.84,
+     "store_size": 191
+    },
+    "recalib": {
+     "overall": 0.84,
+     "first50": 0.78,
+     "last50": 0.88,
+     "store_size": 177
+    },
+    "recal_detail": {
+     "n_poisoned": 4,
+     "poison_dropped": 4,
+     "poison_kept": 0,
+     "poison_recall": 1.0
+    }
+   },
+   "C": {
+    "scratch": {
+     "overall": 0.56,
+     "first50": 0.3,
+     "last50": 0.8,
+     "store_size": 66
+    },
+    "naive": {
+     "overall": 0.7466666666666667,
+     "first50": 0.7,
+     "last50": 0.88,
+     "store_size": 195
+    },
+    "recalib": {
+     "overall": 0.6533333333333333,
+     "first50": 0.6,
+     "last50": 0.74,
+     "store_size": 209
+    }
+   }
+  },
+  {
+   "seed": 43,
+   "donor_acc": 0.59,
+   "donor_store": 164,
+   "B": {
+    "scratch": {
+     "overall": 0.7066666666666667,
+     "first50": 0.44,
+     "last50": 0.92,
+     "store_size": 44
+    },
+    "naive": {
+     "overall": 0.8866666666666667,
+     "first50": 0.8,
+     "last50": 0.92,
+     "store_size": 181
+    },
+    "recalib": {
+     "overall": 0.86,
+     "first50": 0.78,
+     "last50": 0.9,
+     "store_size": 185,
+     "recal": {
+      "kept": 164,
+      "dropped": 0,
+      "precision": 1.0,
+      "recall": 1.0
+     }
+    }
+   },
+   "B_poisoned": {
+    "naive": {
+     "overall": 0.7,
+     "first50": 0.62,
+     "last50": 0.74,
+     "store_size": 209
+    },
+    "recalib": {
+     "overall": 0.7666666666666667,
+     "first50": 0.74,
+     "last50": 0.84,
+     "store_size": 195
+    },
+    "recal_detail": {
+     "n_poisoned": 4,
+     "poison_dropped": 4,
+     "poison_kept": 0,
+     "poison_recall": 1.0
+    }
+   },
+   "C": {
+    "scratch": {
+     "overall": 0.5333333333333333,
+     "first50": 0.22,
+     "last50": 0.74,
+     "store_size": 70
+    },
+    "naive": {
+     "overall": 0.7666666666666667,
+     "first50": 0.78,
+     "last50": 0.8,
+     "store_size": 199
+    },
+    "recalib": {
+     "overall": 0.66,
+     "first50": 0.64,
+     "last50": 0.68,
+     "store_size": 215
+    }
+   }
+  },
+  {
+   "seed": 71,
+   "donor_acc": 0.6,
+   "donor_store": 160,
+   "B": {
+    "scratch": {
+     "overall": 0.64,
+     "first50": 0.42,
+     "last50": 0.8,
+     "store_size": 54
+    },
+    "naive": {
+     "overall": 0.8266666666666667,
+     "first50": 0.82,
+     "last50": 0.84,
+     "store_size": 186
+    },
+    "recalib": {
+     "overall": 0.78,
+     "first50": 0.76,
+     "last50": 0.92,
+     "store_size": 193,
+     "recal": {
+      "kept": 160,
+      "dropped": 0,
+      "precision": 1.0,
+      "recall": 1.0
+     }
+    }
+   },
+   "B_poisoned": {
+    "naive": {
+     "overall": 0.7066666666666667,
+     "first50": 0.6,
+     "last50": 0.7,
+     "store_size": 204
+    },
+    "recalib": {
+     "overall": 0.74,
+     "first50": 0.68,
+     "last50": 0.68,
+     "store_size": 196
+    },
+    "recal_detail": {
+     "n_poisoned": 4,
+     "poison_dropped": 3,
+     "poison_kept": 1,
+     "poison_recall": 0.75
+    }
+   },
+   "C": {
+    "scratch": {
+     "overall": 0.54,
+     "first50": 0.34,
+     "last50": 0.66,
+     "store_size": 69
+    },
+    "naive": {
+     "overall": 0.7533333333333333,
+     "first50": 0.76,
+     "last50": 0.68,
+     "store_size": 197
+    },
+    "recalib": {
+     "overall": 0.6866666666666666,
+     "first50": 0.68,
+     "last50": 0.56,
+     "store_size": 207
+    }
+   }
+  }
+ ]
+}
